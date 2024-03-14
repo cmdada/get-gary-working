@@ -1,10 +1,10 @@
 package frc.robot.commands;
 
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.Gate;
 import edu.wpi.first.wpilibj.Timer;
 
-public class CloseGate extends CommandBase {
+public class CloseGate extends Command {
     private Gate gate;
     private Timer timer = new Timer();
 

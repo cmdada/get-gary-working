@@ -1,10 +1,10 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.Drivetrain;
 
-public class CalibrateEncoders extends CommandBase {
+public class CalibrateEncoders extends Command {
     private Drivetrain drivetrain;
     private Timer timer = new Timer();
     private boolean done = false;

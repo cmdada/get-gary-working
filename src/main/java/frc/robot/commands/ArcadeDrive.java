@@ -8,14 +8,14 @@
 package frc.robot.commands;
 
 import java.util.function.DoubleSupplier;
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.Drivetrain;
 
 
 /**
  * Point the wheels straight forwards and drive like a standard differential drive.
  */
-public class ArcadeDrive extends CommandBase {
+public class ArcadeDrive extends Command {
     @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
     private final Drivetrain drivetrain;
 

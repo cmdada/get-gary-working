@@ -10,7 +10,7 @@ package frc.robot.commands;
 import edu.wpi.first.networktables.NetworkTable;
 import edu.wpi.first.networktables.NetworkTableEntry;
 import edu.wpi.first.networktables.NetworkTableInstance;
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.Drivetrain;
 import frc.robot.subsystems.VisionLights;
 
@@ -19,7 +19,7 @@ import java.util.function.DoubleSupplier;
 /**
  * Rotate the robot towards the goal using the vision system
  */
-public class VisionAlign extends CommandBase {
+public class VisionAlign extends Command {
     @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
 
     private final Drivetrain drivetrain;

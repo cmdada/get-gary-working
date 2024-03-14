@@ -7,7 +7,7 @@
 
 package frc.robot.commands;
 
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.Drivetrain;
 
 import java.util.function.DoubleSupplier;
@@ -15,7 +15,7 @@ import java.util.function.DoubleSupplier;
 /**
  * Rotate in place until the gyro reading matches a specified value
  */
-public class RotateToAngle extends CommandBase {
+public class RotateToAngle extends Command {
     @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
     private final Drivetrain drivetrain;
     private double targetAngle;
